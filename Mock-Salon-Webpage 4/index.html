@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Y Ella - Beauty & Style Salon</title>
+    <meta name="description" content="El Y Ella Beauty Salon - Your premier destination for luxury hair and beauty services. Bilingual salon serving both English and Spanish-speaking customers.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#home" class="logo">
+                    <i data-lucide="scissors"></i>
+                    <span class="brand-name">El Y Ella</span>
+                </a>
+                
+                <div class="nav-links desktop-nav">
+                    <a href="#home" class="nav-link active" data-translate="nav.home">Home</a>
+                    <a href="#services" class="nav-link" data-translate="nav.services">Services</a>
+                    <a href="#reservations" class="nav-link" data-translate="nav.book">Book Now</a>
+                    <div class="language-switcher">
+                        <i data-lucide="globe"></i>
+                        <button id="language-btn" class="lang-btn">EN</button>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+            
+            <div class="mobile-nav" id="mobile-nav">
+                <a href="#home" class="nav-link" data-translate="nav.home">Home</a>
+                <a href="#services" class="nav-link" data-translate="nav.services">Services</a>
+                <a href="#reservations" class="nav-link" data-translate="nav.book">Book Now</a>
+                <div class="language-switcher">
+                    <i data-lucide="globe"></i>
+                    <button id="mobile-language-btn" class="lang-btn">EN</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-translate="home.hero.title">El Y Ella</h1>
+            <p class="hero-subtitle" data-translate="home.hero.subtitle">Where elegance meets expertise. Transform your look with our premium hair and beauty services.</p>
+            <div class="hero-buttons">
+                <a href="#reservations" class="btn btn-primary" data-translate="home.hero.book">Book Appointment</a>
+                <a href="#services" class="btn btn-outline" data-translate="home.hero.services">View Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title" data-translate="home.about.title">Welcome to El Y Ella</h2>
+                    <p class="about-text" data-translate="home.about.description1">With over 15 years of experience in the beauty industry, our team of expert stylists and beauty professionals are dedicated to making you look and feel your absolute best.</p>
+                    <p class="about-text" data-translate="home.about.description2">We use only the finest products and latest techniques to ensure every visit leaves you feeling pampered and beautiful. From precision cuts to luxurious treatments, we provide a complete beauty experience in our elegant, welcoming salon.</p>
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <h4 class="stat-number">15+</h4>
+                            <p class="stat-label" data-translate="home.about.years">Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h4 class="stat-number">500+</h4>
+                            <p class="stat-label" data-translate="home.about.clients">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Salon interior" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-translate="home.services.title">Our Services</h2>
+                <p class="section-subtitle" data-translate="home.services.subtitle">Discover our range of premium beauty services designed to enhance your natural beauty</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&h=600" alt="Hair Services" loading="lazy">
+                    <div class="service-content">
+                        <h3 data-translate="home.services.hair.title">Hair Services</h3>
+                        <p data-translate="home.services.hair.description">Expert cuts, colors, and styling for all hair types. Transform your look with our precision techniques.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&h=600" alt="Beauty Treatments" loading="lazy">
+                    <div class="service-content">
+                        <h3 data-translate="home.services.beauty.title">Beauty Treatments</h3>
+                        <p data-translate="home.services.beauty.description">Rejuvenating facials, skincare treatments, and beauty services to enhance your natural glow.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&h=600" alt="Nail Care" loading="lazy">
+                    <div class="service-content">
+                        <h3 data-translate="home.services.nails.title">Nail Care</h3>
+                        <p data-translate="home.services.nails.description">Complete nail care services including manicures, pedicures, and nail art by skilled technicians.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Services -->
+            <div class="detailed-services">
+                <div class="service-category">
+                    <h3 class="category-title" data-translate="services.hair.title">Hair Services</h3>
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <h4 data-translate="services.hair.cuts">Cuts & Styling</h4>
+                            <ul class="price-list">
+                                <li><span>Women's Cut & Style</span><span>$75</span></li>
+                                <li><span>Men's Cut & Style</span><span>$45</span></li>
+                                <li><span>Children's Cut</span><span>$35</span></li>
+                                <li><span>Blowout</span><span>$40</span></li>
+                                <li><span>Updo/Special Event</span><span>$85</span></li>
+                            </ul>
+                        </div>
+                        <div class="pricing-card">
+                            <h4 data-translate="services.hair.color">Color Services</h4>
+                            <ul class="price-list">
+                                <li><span>Full Color</span><span>$120</span></li>
+                                <li><span>Highlights/Lowlights</span><span>$140</span></li>
+                                <li><span>Root Touch-up</span><span>$80</span></li>
+                                <li><span>Balayage</span><span>$180</span></li>
+                                <li><span>Color Correction</span><span>$200+</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category">
+                    <h3 class="category-title" data-translate="services.beauty.title">Beauty Treatments</h3>
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <h4 data-translate="services.beauty.facial">Facial Treatments</h4>
+                            <ul class="price-list">
+                                <li><span>Classic Facial</span><span>$80</span></li>
+                                <li><span>Anti-Aging Facial</span><span>$120</span></li>
+                                <li><span>Hydrating Facial</span><span>$95</span></li>
+                                <li><span>Acne Treatment</span><span>$90</span></li>
+                            </ul>
+                        </div>
+                        <div class="pricing-card">
+                            <h4 data-translate="services.beauty.additional">Additional Treatments</h4>
+                            <ul class="price-list">
+                                <li><span>Eyebrow Waxing</span><span>$25</span></li>
+                                <li><span>Eyelash Extensions</span><span>$150</span></li>
+                                <li><span>Makeup Application</span><span>$60</span></li>
+                                <li><span>Bridal Package</span><span>$300</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category">
+                    <h3 class="category-title" data-translate="services.nails.title">Nail Services</h3>
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <h4 data-translate="services.nails.manicure">Manicure Services</h4>
+                            <ul class="price-list">
+                                <li><span>Classic Manicure</span><span>$35</span></li>
+                                <li><span>Gel Manicure</span><span>$45</span></li>
+                                <li><span>French Manicure</span><span>$40</span></li>
+                                <li><span>Nail Art</span><span>$55</span></li>
+                            </ul>
+                        </div>
+                        <div class="pricing-card">
+                            <h4 data-translate="services.nails.pedicure">Pedicure Services</h4>
+                            <ul class="price-list">
+                                <li><span>Classic Pedicure</span><span>$45</span></li>
+                                <li><span>Spa Pedicure</span><span>$65</span></li>
+                                <li><span>Gel Pedicure</span><span>$55</span></li>
+                                <li><span>Callus Treatment</span><span>$20</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-translate="home.contact.title">Visit Us</h2>
+                <p class="section-subtitle" data-translate="home.contact.subtitle">Find us in the heart of the city, ready to serve you</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i data-lucide="map-pin"></i>
+                    <h3 data-translate="home.contact.location">Location</h3>
+                    <div class="contact-info">
+                        <p>123 Beauty Avenue</p>
+                        <p>Downtown District</p>
+                        <p>City, State 12345</p>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <i data-lucide="phone"></i>
+                    <h3 data-translate="home.contact.contact">Contact</h3>
+                    <div class="contact-info">
+                        <p><i data-lucide="phone"></i> (555) 123-4567</p>
+                        <p><i data-lucide="mail"></i> info@elyella.com</p>
+                        <p><i data-lucide="globe"></i> www.elyella.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <i data-lucide="clock"></i>
+                    <h3 data-translate="home.contact.hours">Hours</h3>
+                    <div class="contact-info">
+                        <p><strong data-translate="home.contact.hours.weekdays">Mon-Fri: 9:00 AM - 8:00 PM</strong></p>
+                        <p><strong data-translate="home.contact.hours.saturday">Saturday: 9:00 AM - 6:00 PM</strong></p>
+                        <p><strong data-translate="home.contact.hours.sunday">Sunday: 10:00 AM - 5:00 PM</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations" class="reservations-section">
+        <div class="hero-bg-small"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-translate="reservations.hero.title">Book Your Appointment</h2>
+                <p class="section-subtitle" data-translate="reservations.hero.subtitle">Schedule your beauty transformation today</p>
+            </div>
+            
+            <div class="reservation-form-container">
+                <form id="reservation-form" class="reservation-form">
+                    <h3 data-translate="reservations.form.title">Reservation Form</h3>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="firstName" data-translate="form.firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName" data-translate="form.lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-translate="form.email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" data-translate="form.phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service" data-translate="form.service">Service Category</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="hair">Hair Services</option>
+                                <option value="beauty">Beauty Treatments</option>
+                                <option value="nails">Nail Care</option>
+                                <option value="package">Special Package</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="stylist" data-translate="form.stylist">Preferred Stylist</label>
+                            <select id="stylist" name="stylist">
+                                <option value="" data-translate="form.noPreference">No preference</option>
+                                <option value="maria">Maria Rodriguez</option>
+                                <option value="carlos">Carlos Martinez</option>
+                                <option value="sofia">Sofia Lopez</option>
+                                <option value="miguel">Miguel Garcia</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date" data-translate="form.date">Preferred Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="time" data-translate="form.time">Preferred Time</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select time</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="specificService" data-translate="form.specificService">Specific Service Details</label>
+                        <textarea id="specificService" name="specificService" rows="3" placeholder="Please describe the specific service you're interested in..."></textarea>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="specialRequests" data-translate="form.specialRequests">Special Requests or Notes</label>
+                        <textarea id="specialRequests" name="specialRequests" rows="3" placeholder="Any special requests, allergies, or additional information..."></textarea>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newClient" name="newClient">
+                            <span class="checkmark"></span>
+                            <span data-translate="form.newClient">I am a new client</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary full-width" data-translate="reservations.submit">Submit Reservation Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h5 data-translate="footer.company">El Y Ella Beauty Salon</h5>
+                    <p data-translate="footer.description">Your premier destination for luxury hair and beauty services. Experience the difference with our expert team.</p>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h5 data-translate="footer.quickLinks">Quick Links</h5>
+                    <ul>
+                        <li><a href="#home" data-translate="nav.home">Home</a></li>
+                        <li><a href="#services" data-translate="nav.services">Services</a></li>
+                        <li><a href="#reservations" data-translate="nav.book">Book Now</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h5 data-translate="footer.services">Services</h5>
+                    <ul>
+                        <li><a href="#services">Hair Services</a></li>
+                        <li><a href="#services">Beauty Treatments</a></li>
+                        <li><a href="#services">Nail Care</a></li>
+                        <li><a href="#services">Special Packages</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h5 data-translate="footer.contact">Contact Info</h5>
+                    <div class="contact-info">
+                        <p><i data-lucide="map-pin"></i> 123 Beauty Avenue<br>Downtown District, State 12345</p>
+                        <p><i data-lucide="phone"></i> (555) 123-4567</p>
+                        <p><i data-lucide="mail"></i> info@elyella.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="footer-divider">
+            
+            <div class="footer-bottom">
+                <p data-translate="footer.rights">© 2024 El Y Ella Beauty Salon. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#" data-translate="footer.privacy">Privacy Policy</a>
+                    <a href="#" data-translate="footer.terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <p id="toast-message"></p>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
